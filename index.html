@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <meta charset="utf-8">
+        <title>BatiQ | Sri Lanka</title>
+        <link rel="shortcut icon" href="./images/Logo.jpg" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="Soon">
+            <h3>We Crave Exclusivity by BatiQ</h3>
+            <h1>COMING SOON</h1>
+            <hr>
+            <p id="launch"></p>
+            </div>
+        </header>
+
+        <div class="footer-bottom">
+    <div class="container">
+      <p class="copyright-text">
+        Copyright &copy; 2024 <a href="https://www.codexharbor.com/" class="copyright-link"><span class="codexharbor">CodexHarbor</span> </a>      |
+                      Developed by <a href="https://anujaellepola.netlify.app/" class="copyright-link"><span class="codexharbor">Anuja Ellepola</span>
+    </p>
+    </div>
+  </div>
+    </body>
+    
+    
+    
+    <script>
+    
+        var countDownDate = new Date ("August 1, 2029 00:00:00").getTime();
+
+        var x = setInterval(function() {
+
+        var now = new Date ().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor (distance /(1000*60*60*24));
+         var hours = Math.floor ((distance % (1000*60*60*24)) / (1000*60*60));
+          var minutes = Math.floor ((distance % (1000*60*60)) / (1000*60));
+           var seconds = Math.floor ((distance % (1000*60)) / 1000);
+
+document.getElementById("launch").innerHTML=days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+    
+    if (distance < 0) {
+    clearInterval(x);
+    document.getElementById('launch').innerHTML="EXPIRED";
+    }
+            
+}, 1000);
+    
+    </script>
+</hmtl>
